@@ -1,0 +1,76 @@
+# ===== 저울값 엔진 설정 (1호 펫: 반려동물 소모품) =====
+naver:
+  client_id: "${NAVER_CLIENT_ID}"
+  client_secret: "${NAVER_CLIENT_SECRET}"
+  display: 100
+  sort: "sim"
+
+# 웹푸시(PWA) — OneSignal 무료 플랜. app_id는 data/channel.json(공개), REST 키는 GitHub Secrets
+onesignal:
+  rest_api_key: "${ONESIGNAL_REST_API_KEY}"
+  segment: "Total Subscriptions"     # 대시보드 세그먼트명 (구계정은 "Subscribed Users")
+  push_per_day: 1                    # 일 1회 상한 — 과다 푸시는 구독 해지 1순위
+
+# 텔레그램은 홍보 채널에서 제외(선택). 토큰 미설정 시 자동 비활성
+telegram:
+  bot_token: "${TELEGRAM_BOT_TOKEN}"
+  chat_id: "${TELEGRAM_CHAT_ID}"
+
+kakao:
+  enabled: false
+  provider: "solapi"
+  api_key: "${KAKAO_API_KEY}"
+  api_secret: "${KAKAO_API_SECRET}"
+  pf_id: "${KAKAO_PF_ID}"
+
+affiliate:
+  disclosure: "※ 본 링크로 구매 시 채널이 수수료를 받을 수 있음"
+  coupang:
+    access_key: "${COUPANG_ACCESS_KEY}"
+    secret_key: "${COUPANG_SECRET_KEY}"
+  manual_links_csv: "data/affiliate_links.csv"
+
+rules:
+  history_days: 90
+  drop_threshold: 0.15
+  unit_price_percentile: 0.20
+  dedupe_days: 7
+  max_alerts_per_run: 8
+  min_price_krw: 5000
+  # 단위가 랭킹(규칙B)을 단독 근거로 쓰는 카테고리 — 등급 차이가 작은 소모품만.
+  # 사료(dog_dry/cat_dry)는 등급 차이가 커서 규칙A(동일 SKU 최저가)만 사용, 단위가는 참고 표기.
+  unit_rank_categories: ["pad", "litter", "wet", "treat"]
+
+keywords:
+  dog_dry:
+    - "강아지 사료 6kg"
+    - "강아지 사료 10kg"
+    - "로얄캐닌 강아지 사료"
+    - "오리젠 강아지"
+    - "내추럴발란스 강아지 사료"
+  cat_dry:
+    - "고양이 사료 7kg"
+    - "고양이 사료 5kg"
+    - "로얄캐닌 인도어 고양이"
+    - "오리젠 캣"
+    - "네추럴코어 고양이 사료"
+  wet:
+    - "고양이 습식캔 24개"
+    - "강아지 습식캔 24개"
+    - "고양이 파우치 85g 24개"
+  treat:
+    - "강아지 간식 육포 1kg"
+    - "강아지 덴탈껌 대용량"
+    - "고양이 츄르 50개"
+    - "강아지 동결건조 간식"
+  pad:
+    - "강아지 배변패드 100매"
+    - "배변패드 대형 50매"
+    - "배변패드 200매"
+  litter:
+    - "고양이 모래 벤토나이트 10kg"
+    - "고양이 모래 두부모래 7L"
+    - "고양이 모래 카사바 6L"
+  supplement:
+    - "강아지 관절영양제 60정"
+    - "고양이 유산균 30포"

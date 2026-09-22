@@ -1,0 +1,302 @@
+[
+ {
+  "product_id": "demo000",
+  "title": "로얄캐닌 미니 어덜트 강아지 사료 8kg",
+  "price": 78400,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/0",
+  "image": null,
+  "brand": "로얄캐닌",
+  "category": "dog_dry"
+ },
+ {
+  "product_id": "demo001",
+  "title": "오리젠 오리지널 독 11.4kg",
+  "price": 139000,
+  "mall": "네이버",
+  "link": "https://example.com/p/1",
+  "image": null,
+  "brand": "오리젠",
+  "category": "dog_dry"
+ },
+ {
+  "product_id": "demo002",
+  "title": "내추럴발란스 LID 오리 강아지 사료 10.9kg",
+  "price": 89000,
+  "mall": "펫프렌즈",
+  "link": "https://example.com/p/2",
+  "image": null,
+  "brand": "내추럴발란스",
+  "category": "dog_dry"
+ },
+ {
+  "product_id": "demo003",
+  "title": "네추럴코어 에코 강아지 사료 6kg",
+  "price": 42900,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/3",
+  "image": null,
+  "brand": "네추럴코어",
+  "category": "dog_dry"
+ },
+ {
+  "product_id": "demo004",
+  "title": "하림펫푸드 더리얼 강아지 사료 5.5kg",
+  "price": 38900,
+  "mall": "11번가",
+  "link": "https://example.com/p/4",
+  "image": null,
+  "brand": "하림펫푸드",
+  "category": "dog_dry"
+ },
+ {
+  "product_id": "demo005",
+  "title": "로얄캐닌 인도어 고양이 사료 10kg",
+  "price": 112000,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/5",
+  "image": null,
+  "brand": "로얄캐닌",
+  "category": "cat_dry"
+ },
+ {
+  "product_id": "demo006",
+  "title": "오리젠 캣 앤 키튼 5.4kg",
+  "price": 79000,
+  "mall": "네이버",
+  "link": "https://example.com/p/6",
+  "image": null,
+  "brand": "오리젠",
+  "category": "cat_dry"
+ },
+ {
+  "product_id": "demo007",
+  "title": "네추럴코어 고양이 사료 7kg",
+  "price": 40900,
+  "mall": "핏펫",
+  "link": "https://example.com/p/7",
+  "image": null,
+  "brand": "네추럴코어",
+  "category": "cat_dry"
+ },
+ {
+  "product_id": "demo008",
+  "title": "캐츠랑 고양이 사료 6.5kg",
+  "price": 24900,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/8",
+  "image": null,
+  "brand": "캐츠랑",
+  "category": "cat_dry"
+ },
+ {
+  "product_id": "demo009",
+  "title": "고 솔루션 카니보어 고양이 3.6kg",
+  "price": 56000,
+  "mall": "펫프렌즈",
+  "link": "https://example.com/p/9",
+  "image": null,
+  "brand": "고",
+  "category": "cat_dry"
+ },
+ {
+  "product_id": "demo010",
+  "title": "쉬바 고양이 파우치 85g x 24개",
+  "price": 23900,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/10",
+  "image": null,
+  "brand": "쉬바",
+  "category": "wet"
+ },
+ {
+  "product_id": "demo011",
+  "title": "캐츠랑 고양이 습식캔 160g x 24캔",
+  "price": 22800,
+  "mall": "네이버",
+  "link": "https://example.com/p/11",
+  "image": null,
+  "brand": "캐츠랑",
+  "category": "wet"
+ },
+ {
+  "product_id": "demo012",
+  "title": "웰니스 코어 강아지 습식캔 354g x 12캔",
+  "price": 39900,
+  "mall": "펫프렌즈",
+  "link": "https://example.com/p/12",
+  "image": null,
+  "brand": "웰니스",
+  "category": "wet"
+ },
+ {
+  "product_id": "demo013",
+  "title": "이나바 챠오츄르 고양이 간식 14g x 50개",
+  "price": 19200,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/13",
+  "image": null,
+  "brand": "이나바",
+  "category": "wet"
+ },
+ {
+  "product_id": "demo014",
+  "title": "굿데이 강아지 육포 오리 1kg",
+  "price": 15900,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/14",
+  "image": null,
+  "brand": "굿데이",
+  "category": "treat"
+ },
+ {
+  "product_id": "demo015",
+  "title": "페디그리 덴타스틱 대형견 28개 720g",
+  "price": 18900,
+  "mall": "네이버",
+  "link": "https://example.com/p/15",
+  "image": null,
+  "brand": "페디그리",
+  "category": "treat"
+ },
+ {
+  "product_id": "demo016",
+  "title": "동결건조 닭가슴살 강아지 간식 200g",
+  "price": 12900,
+  "mall": "핏펫",
+  "link": "https://example.com/p/16",
+  "image": null,
+  "brand": "동결건조",
+  "category": "treat"
+ },
+ {
+  "product_id": "demo017",
+  "title": "테비 고양이 동결건조 간식 100g",
+  "price": 9900,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/17",
+  "image": null,
+  "brand": "테비",
+  "category": "treat"
+ },
+ {
+  "product_id": "demo018",
+  "title": "바잇미 강아지 배변패드 대형 100매",
+  "price": 23300,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/18",
+  "image": null,
+  "brand": "바잇미",
+  "category": "pad"
+ },
+ {
+  "product_id": "demo019",
+  "title": "페티즌 배변패드 중형 200매",
+  "price": 31900,
+  "mall": "네이버",
+  "link": "https://example.com/p/19",
+  "image": null,
+  "brand": "페티즌",
+  "category": "pad"
+ },
+ {
+  "product_id": "demo020",
+  "title": "도그웨이 배변패드 특대형 50매",
+  "price": 24900,
+  "mall": "펫프렌즈",
+  "link": "https://example.com/p/20",
+  "image": null,
+  "brand": "도그웨이",
+  "category": "pad"
+ },
+ {
+  "product_id": "demo021",
+  "title": "코스트코 커클랜드 배변패드 대형 100매",
+  "price": 25900,
+  "mall": "11번가",
+  "link": "https://example.com/p/21",
+  "image": null,
+  "brand": "코스트코",
+  "category": "pad"
+ },
+ {
+  "product_id": "demo022",
+  "title": "탐사 배변패드 중형 100매",
+  "price": 13900,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/22",
+  "image": null,
+  "brand": "탐사",
+  "category": "pad"
+ },
+ {
+  "product_id": "demo023",
+  "title": "에버클린 벤토나이트 고양이 모래 11.3kg",
+  "price": 25900,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/23",
+  "image": null,
+  "brand": "에버클린",
+  "category": "litter"
+ },
+ {
+  "product_id": "demo024",
+  "title": "탐사 벤토나이트 고양이 모래 10kg",
+  "price": 9800,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/24",
+  "image": null,
+  "brand": "탐사",
+  "category": "litter"
+ },
+ {
+  "product_id": "demo025",
+  "title": "라이프캣 두부모래 7L x 3개",
+  "price": 26900,
+  "mall": "네이버",
+  "link": "https://example.com/p/25",
+  "image": null,
+  "brand": "라이프캣",
+  "category": "litter"
+ },
+ {
+  "product_id": "demo026",
+  "title": "시크릿캣 카사바 모래 6L x 4개",
+  "price": 39900,
+  "mall": "핏펫",
+  "link": "https://example.com/p/26",
+  "image": null,
+  "brand": "시크릿캣",
+  "category": "litter"
+ },
+ {
+  "product_id": "demo027",
+  "title": "네이처스 미라클 벤토나이트 9kg",
+  "price": 19900,
+  "mall": "펫프렌즈",
+  "link": "https://example.com/p/27",
+  "image": null,
+  "brand": "네이처스",
+  "category": "litter"
+ },
+ {
+  "product_id": "demo028",
+  "title": "조인트맥스 강아지 관절영양제 60정",
+  "price": 35900,
+  "mall": "쿠팡",
+  "link": "https://example.com/p/28",
+  "image": null,
+  "brand": "조인트맥스",
+  "category": "supplement"
+ },
+ {
+  "product_id": "demo029",
+  "title": "닥터독 강아지 유산균 30포",
+  "price": 24900,
+  "mall": "네이버",
+  "link": "https://example.com/p/29",
+  "image": null,
+  "brand": "닥터독",
+  "category": "supplement"
+ }
+]

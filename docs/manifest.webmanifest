@@ -1,0 +1,15 @@
+{
+  "name": "저울값 펫 단가표",
+  "short_name": "저울값",
+  "description": "반려동물 소모품 단위가 비교 — 장당·kg당·100g당",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F3F5F4",
+  "theme_color": "#E4560F",
+  "lang": "ko",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
