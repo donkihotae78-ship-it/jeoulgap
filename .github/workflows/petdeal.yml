@@ -1,0 +1,31 @@
+name: petdeal
+on:
+  schedule:
+    - cron: "0 21,3,9,15 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: petdeal
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests pyyaml
+      - name: collect-judge-notify-publish
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
+          COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
+          COUPANG_SECRET_KEY: ${{ secrets.COUPANG_SECRET_KEY }}
+        run: python run.py
+      - name: save-history-and-site
+        run: |
+          git config user.name "petdeal-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/petdeal.sqlite data/deals.json data/push_state.json docs/index.html site/index.html
+          git commit -m "run update" || echo "no changes"
+          git push
