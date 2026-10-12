@@ -59,3 +59,23 @@ class DemoCollector:
             n = parse(it["title"], it["category"])
             out.append({**it, **n, "tags0": n["tags"]})
         return out
+
+
+class ManualCollector:
+    """실제 쿠팡파트너스 가입 전, 운영자가 직접 큐레이션한 실제 상품 목록 사용.
+    data/manual_items.json 에 실제 상품(title/price/mall/link/image/brand/category) 직접 입력.
+    형식은 data/sample_items.json과 동일. 쿠팡 링크는 가입 후 affiliate.py가 자동 딥링크 변환.
+    """
+    def __init__(self, path="data/manual_items.json"):
+        import json
+        with open(path, encoding="utf-8") as f:
+            self.items = json.load(f)
+
+    def collect(self, keywords_by_cat, min_price=5000):
+        out = []
+        for it in self.items:
+            if it.get("price", 0) < min_price:
+                continue
+            n = parse(it["title"], it["category"])
+            out.append({**it, **n, "tags0": n["tags"]})
+        return out
