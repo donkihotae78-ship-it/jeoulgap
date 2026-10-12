@@ -9,7 +9,7 @@ import os
 from datetime import datetime
 from petdeal.settings import load
 from petdeal.db import DB
-from petdeal.collector import NaverCollector, DemoCollector
+from petdeal.collector import NaverCollector, DemoCollector, ManualCollector
 from petdeal.judge import evaluate
 from petdeal.affiliate import Affiliate
 from petdeal.notify import Telegram, Console, OneSignal, render, digest_text
@@ -20,12 +20,20 @@ cfg = load("config.yaml")
 ts = datetime.now().replace(microsecond=0).isoformat()
 db = DB(os.environ.get("PD_DB", "data/petdeal.sqlite"))
 
-use_demo = "--demo" in args or not cfg["naver"]["client_id"]
-if use_demo and "--demo" not in args:
-    print("[주의] NAVER_CLIENT_ID 미설정 → 데모 데이터로 실행")
+manual_path = "data/manual_items.json"
+has_manual = os.path.exists(manual_path) and os.path.getsize(manual_path) > 2
+if "--demo" in args:
+    collector = DemoCollector()
+elif has_manual:
+    print("[정보] data/manual_items.json 수동 큐레이션 데이터로 실행")
+    collector = ManualCollector(manual_path)
+elif cfg["naver"]["client_id"]:
+    collector = NaverCollector(cfg["naver"])
+else:
+    print("[주의] 수동 데이터·NAVER_CLIENT_ID 모두 없음 → 데모 데이터로 실행")
     if not os.path.exists("data/sample_items.json"):
         import subprocess; subprocess.run([sys.executable, "tests/make_sample.py"], check=True)
-collector = DemoCollector() if use_demo else NaverCollector(cfg["naver"])
+    collector = DemoCollector()
 items = collector.collect(cfg["keywords"], cfg["rules"]["min_price_krw"])
 print(f"[{ts}] 수집 {len(items)}건")
 
