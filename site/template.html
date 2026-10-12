@@ -203,7 +203,7 @@ if (CH.onesignal_app_id) {
   window.OneSignalDeferred = window.OneSignalDeferred || [];
   OneSignalDeferred.push(async function(OneSignal){
     await OneSignal.init({ appId: CH.onesignal_app_id,
-      serviceWorkerParam: { scope: base }, serviceWorkerPath: 'OneSignalSDKWorker.js' });
+      serviceWorkerParam: { scope: base }, serviceWorkerPath: 'jeoulgap/OneSignalSDKWorker.js' });
     const btn = $('#cta-push'); btn.hidden = false;
     const sync = () => { btn.textContent = OneSignal.User.PushSubscription.optedIn ? '🔔 알림 받는 중' : '🔔 딜 알림 받기'; };
     sync(); OneSignal.User.PushSubscription.addEventListener('change', sync);
